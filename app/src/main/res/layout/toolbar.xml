@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/toolbar"
+        android:layout_gravity="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <LinearLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="300dp"
+                android:text="GPS Alert"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/toolbar_setting"
+                android:layout_width="43dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/add" />
+        </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

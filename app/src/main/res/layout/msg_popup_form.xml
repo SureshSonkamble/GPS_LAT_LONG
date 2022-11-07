@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/edit_text_border"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_cancel"
+        android:background="@drawable/edittext_border"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textSize="20dp"
+        android:layout_gravity="end"
+        android:textColor="#ffffff"
+        android:drawableRight="@drawable/icon_popoup_cancel"/>
+    <View
+        android:layout_marginTop="05dp"
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/click_after_amount">
+
+        <LinearLayout
+            android:layout_marginTop="05dp"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:text="Emergency message: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edt_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="I'm in emergency"
+                android:gravity="center|start"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/blackcolour"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="05dp"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Primary Contact: "
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/edt_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/blackcolour"
+                />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="05dp"
+            android:background="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:textColor="@color/whitecolour"
+            android:text="Save Setting"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_border"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+    </LinearLayout>
+</LinearLayout>
